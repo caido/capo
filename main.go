@@ -74,7 +74,7 @@ func main() {
 				}, &cli.StringFlag{
 					Name:  "upstream",
 					Usage: "Upstream server to proxy to",
-					Value: "http://perdu.com",
+					Value: "https://httpbin.org",
 				}, &cli.StringFlag{
 					Name:  "config",
 					Usage: "Configuration file path",
