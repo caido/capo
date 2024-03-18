@@ -36,3 +36,17 @@ $ curl http://admin:pass@localhost:6634/
   "url": "https://httpbin.org/get"
 }
 ```
+
+## Docker
+
+You can also use it with Docker:
+
+```bash
+$ docker pull ghcr.io/caido/capo:latest
+$ cat >> config.yaml <<EOL
+users:
+  - username: admin
+    password: pass
+EOL
+$ docker run --rm -v $(PWD)/config.yaml:/etc/capo/config.yaml -p 6634:6634 ghcr.io/caido/capo:latest
+```
