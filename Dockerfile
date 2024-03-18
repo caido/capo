@@ -30,4 +30,4 @@ COPY --from=base /usr/bin/capo /usr/bin/capo
 USER 10000
 
 ENTRYPOINT ["capo"]
-CMD ["--auth-config", "/etc/capo/authn.yaml"]
+CMD ["--config", "/etc/capo/config.yaml"]
